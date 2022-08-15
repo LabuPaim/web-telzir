@@ -1,4 +1,4 @@
-import { Api } from "api/api";
+import { Api } from "shared/services/api/api";
 // import { Ddd } from "interfaces"
 
 const getAll = () => Api.get<object[]>('/ddd')
