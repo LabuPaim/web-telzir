@@ -1,1 +1,2 @@
-export * from "./ThemesColor";
+export * from "./Light";
+export * from "./Dark";

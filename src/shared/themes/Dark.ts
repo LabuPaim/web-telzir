@@ -1,7 +1,7 @@
 import { Palette } from '@mui/icons-material'
 import {createTheme} from '@mui/material'
 
-export const ColorTheme = createTheme({
+export const DarkTheme = createTheme({
     palette: {
         primary:{
             main: '#339DA2',
@@ -16,8 +16,8 @@ export const ColorTheme = createTheme({
             contrastText: '#FFFFFF',
         },
         background: {
-            default: '#FFFFFF',
-            paper: '#f7f6f3',
+            default: '#000000',
+            paper: '#202124',
         }
 
     }
