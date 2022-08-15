@@ -1,6 +1,8 @@
 import 'app/App.scss';
 
-function App() {
+
+
+export const App = () => {
   return (
     <div className="App">
       <header className="App-header">        
@@ -9,4 +11,3 @@ function App() {
   );
 }
 
-export default App;
