@@ -1,13 +1,19 @@
+import { BrowserRouter } from "react-router-dom";
+
 import 'app/App.scss';
+import { AppRoutes } from "routes";
+import { ThemeProvider } from "@emotion/react";
+import { ColorTheme } from "shared/themes";
 
 
 
 export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">        
-      </header>
-    </div>
+    <ThemeProvider theme={ColorTheme}>
+      <BrowserRouter>
+        <AppRoutes/> 
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
