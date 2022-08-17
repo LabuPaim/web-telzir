@@ -14,7 +14,7 @@ export const DashBoards = () => {
     const {toggleDrawerOpen} = useDrawerContext()
 
   return (
-    <LayoutBase titulo={'Telzir'}>
+    <LayoutBase titulo={'Telzir'} barraFerramentas={<>Barra de ferramentas</>}>
       {/* <Button variant="contained" onClick={toggleDrawerOpen}>teste</Button> */}
       <Box>teste</Box>
 

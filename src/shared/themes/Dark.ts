@@ -3,6 +3,7 @@ import {createTheme} from '@mui/material'
 
 export const DarkTheme = createTheme({
     palette: {
+        mode: 'dark',
         primary:{
             main: '#339DA2',
             dark: '#2A6D7',
@@ -19,6 +20,10 @@ export const DarkTheme = createTheme({
             default: '#000000',
             paper: '#202124',
         }
-
+    },
+    typography: {
+        allVariants: {
+            color: '#FFFFFF',
+        }
     }
 });
