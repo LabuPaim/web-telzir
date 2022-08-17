@@ -1,22 +1,25 @@
 import { Button } from "@mui/material";
 import { Box } from "@mui/system";
 import { useAppThemeContext, useDrawerContext } from "shared/contexts";
+import { LayoutBase } from "shared/layout";
 
 
 // import 'app/App.scss';
 
 
 
-export const Home = () => {
+export const DashBoards = () => {
 
     const {toggleTheme } = useAppThemeContext()
     const {toggleDrawerOpen} = useDrawerContext()
 
   return (
-    <>
-        <Button variant="contained" onClick={toggleDrawerOpen}>teste</Button>
-        <Box>teste</Box>
-    </>
+    <LayoutBase titulo={'Telzir'}>
+      {/* <Button variant="contained" onClick={toggleDrawerOpen}>teste</Button> */}
+      <Box>teste</Box>
+
+    </LayoutBase>
+    
     
     
   );

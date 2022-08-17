@@ -1,16 +1,37 @@
-import { Button } from '@mui/material'
-import { Home } from 'pages'
-import { Routes, Route, Navigate } from 'react-router-dom'
-import { useAppThemeContext } from 'shared/contexts/ThemeContext'
+
+import { DashBoards } from '../pages'
+import { useEffect } from 'react'
+import { Routes, Route} from 'react-router-dom'
+import { useDrawerContext } from 'shared/contexts/DrawerContext'
 
 export const AppRoutes = () => {
+
+    const { setDrawerOptions} = useDrawerContext()
+
+    useEffect(() => {
+        setDrawerOptions([
+            {
+                icon: 'home',
+                path: '/',
+                label: 'Página Inicial',
+            },
+            {
+                icon: 'perm_contact_calendar',
+                path: '/cadastro',
+                label: 'Contato',
+            }
+        ])
+
+
+    }, [])
 
     
 
     return (
         <Routes>
 
-            <Route path="/" element={<Home/>} />            
+            <Route path="/" element={<DashBoards/>} />
+            {/* <Route path="/cadastro" element={<DashBoards/>} />  */}
 
         </Routes>
     )

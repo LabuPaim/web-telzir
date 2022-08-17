@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 
-import 'app/App.scss';
+import './App.scss';
 import { AppRoutes } from "routes";
 import { AppThemeProvider, DrawerProvider } from "shared/contexts";
 import { MenuLateral } from "shared/components";
