@@ -1,11 +1,16 @@
 import { Api } from "./api/api";
 // import { Ddd } from "interfaces"
 
-const getAll = () => Api.get<object[]>('/ddd')
-const getById = () => Api.get('/ddd/:id')
+const getAllDdd = () => Api.get<object[]>('/ddd')
+const getByIdDdd = () => Api.get('/ddd/:id')
+const getAllPlan = () => Api.get<object[]>('/plan')
+const getByIdPlan = () => Api.get('/plan/:id')
+
 
 
 export const apiService = {
-    getAll,
-    getById,
+    getAllDdd: getAllDdd,
+    getByIdDdd: getByIdDdd,
+    getAllPlan: getAllPlan,
+    getByIdPlan: getByIdPlan,
 }

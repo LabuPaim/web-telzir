@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import { Box } from "@mui/system";
+import { FerramentaSearch } from "shared/components";
 import { useAppThemeContext, useDrawerContext } from "shared/contexts";
 import { LayoutBase } from "shared/layout";
 
@@ -14,7 +15,9 @@ export const DashBoards = () => {
     const {toggleDrawerOpen} = useDrawerContext()
 
   return (
-    <LayoutBase titulo={'Telzir'} barraFerramentas={<>Barra de ferramentas</>}>
+    <LayoutBase titulo={'Telzir'} barraFerramentas={(
+      <FerramentaSearch></FerramentaSearch>
+    )}>
       {/* <Button variant="contained" onClick={toggleDrawerOpen}>teste</Button> */}
       <Box>teste</Box>
 
