@@ -3,6 +3,7 @@ import { DashBoards } from '../pages'
 import { useEffect } from 'react'
 import { Routes, Route} from 'react-router-dom'
 import { useDrawerContext } from 'shared/contexts/DrawerContext'
+import { ListDdd } from 'pages/ddd/ListDdd'
 
 export const AppRoutes = () => {
 
@@ -17,7 +18,7 @@ export const AppRoutes = () => {
             },
             {
                 icon: 'perm_contact_calendar',
-                path: '/cadastro',
+                path: '/contato',
                 label: 'Contato',
             }
         ])
@@ -31,7 +32,6 @@ export const AppRoutes = () => {
         <Routes>
 
             <Route path="/" element={<DashBoards/>} />
-            {/* <Route path="/cadastro" element={<DashBoards/>} />  */}
 
         </Routes>
     )

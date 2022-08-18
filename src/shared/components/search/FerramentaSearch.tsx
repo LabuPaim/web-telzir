@@ -1,5 +1,6 @@
 import { Button, Icon, Paper, TextField, useTheme } from "@mui/material"
 import { Box } from "@mui/system"
+import { Environment } from "shared/environment";
 
 export const FerramentaSearch: React.FC = () => {
 
@@ -16,7 +17,13 @@ export const FerramentaSearch: React.FC = () => {
         paddingX={2} 
         gap={1}
         >
-            <TextField size="small" placeholder="Ex.: 80"/>
+
+       
+            <TextField 
+            size="small" 
+            placeholder={Environment.INPUT_DE_BUSCA}
+            />
+
             <Box flex={1} display="flex" justifyContent='end'>
                 <Button 
                 variant="contained" 
